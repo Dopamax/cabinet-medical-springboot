@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Medecins {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_medecin;
+    private Long id;
     private String nom_medecin;
     private String prenom_medecin;
     private String specialite;
@@ -18,10 +18,10 @@ public class Medecins {
     private String password_m;
     
     public Long getId_medecin() {
-        return id_medecin;
+        return id;
     }
     public void setId_medecin(Long id_medecin) {
-        this.id_medecin = id_medecin;
+        this.id = id_medecin;
     }
     public String getNom_medecin() {
         return nom_medecin;

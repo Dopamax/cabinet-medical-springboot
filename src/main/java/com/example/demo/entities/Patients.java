@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Patients {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_patient;
+    private Long id;
     private String nom_patient;
     private String prenom_patient;
     private String cin_patient;
@@ -22,10 +22,10 @@ public class Patients {
     private String telephone;
     
     public Long getId_patient() {
-        return id_patient;
+        return id;
     }
     public void setId_patient(Long id_patient) {
-        this.id_patient = id_patient;
+        this.id = id_patient;
     }
     public String getNom_patient() {
         return nom_patient;
